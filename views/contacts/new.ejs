@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <% include ../partials/nav %>
+
+    <div class="container contact contact-new">
+      <div class="contact-menu">
+        <a class="btn btn-default" href="/contacts">Back</a>
+      </div>
+      <h2>New</h2>
+      <form class="contact-form" action="/contacts" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" type="text" id="name" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input class="form-control" type="text" id="year" name="year" value="">
+        </div>
+        <div class="form-group">
+          <label for="story">Story</label>
+          <input class="form-control" type="text" id="story" name="story" value="">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
